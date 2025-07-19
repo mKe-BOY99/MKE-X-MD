@@ -1,121 +1,97 @@
-<p align="center">
-  <h1 align="center">💫 MKE-X MD 💫</h1>
-</p>
+# 💫 MKE-X MD - WhatsApp MultiDevice Bot 💫
 
 <p align="center">
-<a href="https://github.com/mKe-BOY99/followers"><img title="Followers" src="https://img.shields.io/github/followers/mKe-BOY99?color=blue&style=flat-square"></a>
-<a href="https://github.com/mKe-BOY99/MKE-X-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mKe-BOY99/MKE-X-MD?color=blue&style=flat-square"></a>
-<a href="https://github.com/mKe-BOY99/MKE-X-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mKe-BOY99/MKE-X-MD?color=blue&style=flat-square"></a>
-<a href="https://github.com/mKe-BOY99/MKE-X-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/mKe-BOY99/MKE-X-MD?style=flat-square&color=green"></a>
-<a href="https://github.com/mKe-BOY99/MKE-X-MD/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+  <img src="https://img.shields.io/github/followers/mKe-BOY99?style=for-the-badge&color=blue">
+  <img src="https://img.shields.io/github/stars/mKe-BOY99/MKE-X-MD?style=for-the-badge&color=gold">
+  <img src="https://img.shields.io/github/forks/mKe-BOY99/MKE-X-MD?style=for-the-badge&color=purple">
+  <img src="https://img.shields.io/github/repo-size/mKe-BOY99/MKE-X-MD?style=for-the-badge&color=green">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge">
 </p>
 
-> **`Current Bot Version ➜ 1.0.0`**
----
+## 🚀 Overview
 
-```
-Dont forget to fork 🍴 & star 🌟 repo😇
-```
----
+MKE-X MD is a powerful, multi-featured WhatsApp MultiDevice bot built using **Baileys**. It's open source, fast, reliable and constantly updated to support the latest WhatsApp MD updates.
 
-<p align="center">
-  <a href="https://github.com/mKe-BOY99">
-    <img src="http://readme-typing-svg.herokuapp.com?color=blue&center=true&vCenter=true&multiline=false&lines=MKE-X+MD+MultiDevice;Developed+by+MKE-BOY;Give+star+and+fork+this+Repo+bro+🌟" alt="MKE readme">
-  </a>
-</p>
-
---- 
-
-<a><img src=' https://files.catbox.moe/z4do8f.jpeg'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-***
-
-<p align="center">
-  <a href="https://github.com/mKe-BOY99"><img title="Developer" src="https://img.shields.io/badge/Author-MKE%20BOY0-397604.svg?style=for-the-badge&logo=github" /></a>
-</p>
-
-<div align="center">
-[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-FF00F8?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VbCHd5V1dAw132PB7M1B)
-</div>
-
-<p align="center">
-  <img src="https://profile-counter.glitch.me/{MKE-X-MD}/count.svg" alt="mKe-BOY99 :: Visitor's Count" />
-</p>
-
-<p align="center">
-<a href="https://github.com/mKe-BOY99/MKE-X-MD"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=English&style=flat-square&color=darkpink"></a>
-<img src="https://komarev.com/ghpvc/?username=MKE-X-MD&label=VIEWS&style=flat-square&color=blue" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/mKe-BOY99/MKE-X-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v2.0-darkcyan.svg?style=for-the-badge&logo=appveyor" /></a>
-</p>
-
-***
-
-### 1. Fork This Repository
-
-<a href="https://github.com/mKe-BOY99/MKE-X-MD/fork"><img title="MKE-X MD" src="https://img.shields.io/badge/FORK-MKE-X-MD?color=blue&style=for-the-badge&logo=stackshare"></a>
-
-### 2. Get Session ID 
-
-> **1️⃣ Pair Code (Session ID)**
-
-<a href='https://sessions-muzan-x-md.onrender.com' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
-</a>
+> **Version:** `v2.0-beta`  
+> **Language:** JavaScript/Node.js  
+> **Author:** [MKE-BOY99](https://github.com/mKe-BOY99)
 
 ---
 
-<h2 align="center">MKE-X MD Deployment Options</h2>
+## 🎯 Features
 
-<h4 align="center">1. Heroku</h4>
-***[![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://MKE-X-MKE-BOY99.vercel.app)***
+✅ Group Management  
+✅ Auto Response  
+✅ Sticker Maker  
+✅ Downloader (YT, IG, FB, etc.)  
+✅ AI Chat (OpenAI)  
+✅ Moderation Tools  
+✅ Fun Commands  
+✅ WhatsApp Channel Support  
+✅ Auto Update Workflow
 
-<h4 align="center">2. TalkDrove Free</h4>
-<p align="center">
-<a href='https://talkdrove.com/share-bot/66' target="_blank"><img alt='TalkDrove' src='https://img.shields.io/badge/-TalkDrove%20Deploy-6971FF?style=for-the-badge&logo=Github&logoColor=white'/></a>
-</p>
+---
 
-<details>
-<summary align="center">EASIEST METHOD</summary>
+## 📲 Deployment Options
 
-<h3 align="center"> HOW TO DEPLOY ON TALKDROVE</h3>
-<h6 align="center">
-Create Account Here: https://host.talkdrove.com/<br>
-Then Login<br>
-Claim 10 coins in wallet section<br>
-Locate where to deploy your bot<br>
-Click next, next until you see MKE-X MD<br>
-Fill in session ID and settings, click deploy<br>
-Switch to dark mode if deploy button doesn't appear<br>
-Done 🎉
-</h6>
-</details>
+### 🔹 TalkDrove (Recommended)
 
-### 📦 Download the Bot File
+- Easiest method to host bot online for free
+- Free 24/7 uptime (with 10 free coins)
+- Session & settings form built-in
 
-<p align="center">
-  <a href="https://github.com/mKe-BOY99/MKE-X-MD/archive/refs/heads/main.zip">
-    <img src="https://img.shields.io/badge/Download%20Bot-file-FF009D?style=for-the-badge&logo=github&logoColor=white" alt="Download Bot File" />
-  </a>
-</p>
+🔗 Deploy: [https://talkdrove.com/share-bot/66](https://talkdrove.com/share-bot/66)
 
-### ⚙️ WORKFLOWS
+### 🔹 Heroku
 
-```.github/workflows/deploy.yml```
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://MKE-X-MKE-BOY99.vercel.app)
+
+---
+
+## 🧠 How To Use
+
+### 1️⃣ Fork This Repository
+
+[![Fork Repo](https://img.shields.io/badge/FORK-MKE--X--MD-blue?style=for-the-badge&logo=github)](https://github.com/mKe-BOY99/MKE-X-MD/fork)
+
+### 2️⃣ Get Session ID
+
+🔗 [Generate Your Pairing Code](https://sessions-muzan-x-md.onrender.com)  
+(Use VPN if site doesn't load)
+
+---
+
+## 🛠 How to Deploy on TalkDrove
+
+1. Go to [https://host.talkdrove.com](https://host.talkdrove.com)
+2. Create an account & login
+3. Go to **Wallet** → Claim **10 Coins**
+4. Go to **Deploy** → Find **MKE-X MD**
+5. Fill in required settings (use real session)
+6. If no deploy button: enable **dark mode**
+
+✅ Bot auto-connects once deployed
+
+---
+
+## 📦 Download Bot Source
+
+[![Download ZIP](https://img.shields.io/badge/Download--Bot--Files-FF009D?style=for-the-badge&logo=github)](https://github.com/mKe-BOY99/MKE-X-MD/archive/refs/heads/main.zip)
+
+---
+
+## 🔄 Auto Workflow
+
+File: `.github/workflows/deploy.yml`
 
 ```yaml
 name: Node.js CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
@@ -124,14 +100,33 @@ jobs:
       matrix:
         node-version: [20.x]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
-        run: npm install
-      - name: Start application
-        run: npm start
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm start
 ```
+
+---
+
+## 📊 Analytics
+
+![Profile View](https://komarev.com/ghpvc/?username=MKE-X-MD&label=VIEWS&style=flat-square&color=blue)
+![Visitor Count](https://profile-counter.glitch.me/MKE-X-MD/count.svg)
+
+---
+
+## 📢 Follow & Support
+
+[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VbCHd5V1dAw132PB7M1B)
+
+---
+
+## 🤝 Credits
+
+- Developer: [MKE-BOY99](https://github.com/mKe-BOY99)
+- Contributors: [All Contributors](https://github.com/mKe-BOY99/MKE-X-MD/graphs/contributors)
+
+> Don't forget to **Star** 🌟 and **Fork** 🍴 this repo if you find it helpful!
+
