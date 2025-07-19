@@ -32,7 +32,7 @@ cmd({
       author,
       type: StickerTypes.FULL,
       quality: 100,
-      fps: 10,
+      fps: 120,
       loop: 0,
     });
 
