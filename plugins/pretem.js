@@ -25,7 +25,7 @@ cmd({
 
     const userName = mek.pushName || 'Unknown';
     const packname = userName;
-    const author = `Ma volonté est un feu indomptable,\nmon nom, une légende qui s’écrit à chaque pas.`;
+    const author = `𝐌𝗞𝚵`;
 
     const sticker = new Sticker(media, {
       pack: packname,
