@@ -65,12 +65,12 @@ await conn.sendMessage(
 
       // Create a WhatsApp sticker
       const sticker = new Sticker(buffer.data, {
-        pack: 'dawens boy',
+        pack: `userName`,
         author: `${pushname}`,
         type: StickerTypes.FULL,
         categories: ['🤩', '🎉'],
         id: '12345',
-        quality: 50,
+        quality: 100,
         background: '#000000'
       });
 
