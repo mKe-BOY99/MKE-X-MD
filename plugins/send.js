@@ -5,7 +5,7 @@ const path = require('path');
 const { cmd } = require('../command');
 
 // List of allowed owner JIDs
-const owners = ['50942241547@s.whatsapp.net']; // Replace with your own number (include @s.whatsapp.net)
+const owners = ['50938091691@s.whatsapp.net']; // Replace with your own number (include @s.whatsapp.net)
 const isOwner = (sender) => owners.includes(sender);
 
 const filePath = path.join(__dirname, '../data/password.json');
