@@ -1,0 +1,80 @@
+{
+  "name": "MKE-X MD",
+  "description": "Javascript WhatsApp bot made by mr mke boy tech",
+  "logo": "https://files.catbox.moe/a51qw5.jpeg",
+  "keywords": ["MKE-X MD"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+     "SESSION_ID": {
+      "description": "Paste your Baileys session ID here",
+      "required": true
+    },
+    "MENU_IMAGE_URL": {
+      "description": "URL for menu image",
+      "value": "https://files.catbox.moe/fuoqii.png"
+    },
+    "PREFIX": {
+      "description": "Command prefix",
+      "value": "."
+    },
+    "BOT_NAME": {
+      "description": "Name of the bot",
+      "value": "MKE-X MD"
+    },
+    "STICKER_NAME": {
+      "description": "Sticker pack name",
+      "value": "MKE-X MD"
+    },
+    "DELETE_LINKS": {
+      "description": "Auto delete links in groups",
+      "value": "false"
+    },
+    "OWNER_NUMBER": {
+      "description": "Bot owner's WhatsApp number",
+      "value": "50938091691"
+    },
+    "OWNER_NAME": {
+      "description": "Bot owner's name",
+      "value": "Mr MKE BOY"
+    },
+    "DESCRIPTION": {
+      "description": "Bot description",
+      "value": "*© ᴘᴏᴡᴇʀᴇᴅ by mr mke boy*"
+    },
+    "MODE": {
+      "description": "Bot mode: public | private | group",
+      "value": "public"
+    },
+    "ANTI_LINK_KICK": {
+      "description": "Enable anti-link kick in groups",
+      "value": "false"
+    },
+    "PUBLIC_MODE": {
+      "description": "Make bot public or private",
+      "value": "true"
+    },
+    "AUTO_TYPING": {
+      "description": "Enable auto typing indication",
+      "value": "false"
+    },
+    "READ_CMD": {
+      "description": "Mark commands as read",
+      "value": "false"
+    },
+    "DEV": {
+      "description": "Developer number",
+      "value": "50938091691"
+    }
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+  

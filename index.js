@@ -129,14 +129,16 @@ Whether you're automating chats, managing groups, or just having fun — *MKE-X 
 
 ───────────────
 🔗 *Join Our Official WhatsApp Channel:*  
-https://whatsapp.com/channel/0029VbAq7chIXnlyraijAX1u
+https://whatsapp.com/channel/0029Vb6JYQ81noz7JAjOlg0t
 
 🧑‍💻 *GitHub Repo (Give a ⭐ if you love it):*  
 https://github.com/mKe-BOY99/MKE-X-MD
 
 ───────────────
 💬 *Need Help?*  
-Reach out to our dev team or drop a message in our support group.
+Reach out to our dev team or drop a message in our support group
+
+https://chat.whatsapp.com/CqEHcMf8ZZwEuyj8k0X8JV?mode=r_t.
 
 🚀 *More Features You’ll Love:*  
   ◦ Auto-Responder 🤖  
@@ -150,7 +152,7 @@ Reach out to our dev team or drop a message in our support group.
 🖤 *Powered by:* Mr MKE BOY TECH  
 ⚡ *Built for Speed. Designed for You.*
 `;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/e8pgsz.png` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/z4do8f.jpeg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
