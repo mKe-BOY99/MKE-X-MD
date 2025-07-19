@@ -124,13 +124,13 @@ jobs:
 
 ## 📢 Follow & Support
 
-[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VbCHd5V1dAw132PB7M1B)
+[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029Vb6JYQ81noz7JAjOlg0t)
 
 ---
 
 ## 🤝 Credits
 
-- Developer: [MKE-BOY99](https://github.com/mKe-BOY99)
+- Developer: [MKE-BOY99](https://github.com/dawens8)
 - Contributors: [All Contributors](https://github.com/mKe-BOY99/MKE-X-MD/graphs/contributors)
 
 > Don't forget to **Star** 🌟 and **Fork** 🍴 this repo if you find it helpful!
