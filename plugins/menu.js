@@ -8,7 +8,11 @@ cmd({
   category: 'main',
   react: '📜',
   filename: __filename
-}, async (conn, mek, m, { from, pushname }) => {
+}, async (conn, mek, m, { from, pushname, isOwner }) => {
+
+  // ✅ Check if user is the owner
+  if (!isOwner) return reply("❌ This command is for the bot *owner only*.");
+  
   try {
     const botName = config.BOT_NAME || 'MKE-X MD';
     const ownerName = config.OWNER_NAME || 'Mr MKE BOY';
