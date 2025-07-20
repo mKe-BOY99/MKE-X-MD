@@ -95,8 +95,29 @@ cmd({
       }
     }, { quoted: mek });
 
+ const audioOptions = [
+      'https://files.catbox.moe/3cj1e3.mp4',
+      'https://files.catbox.moe/vq3odo.mp4',
+      'https://files.catbox.moe/fo2kz0.mp4',
+      'https://files.catbox.moe/31os2j.mp4',
+      'https://files.catbox.moe/2auhjw.mp4',
+      'https://files.catbox.moe/czk8mu.mp4'
+    ];
+
+    const randomAudio = audioOptions[Math.floor(Math.random() * audioOptions.length)];
+
+        try {
+      await conn.sendMessage(from, {
+        audio: { url: randomAudio },
+        mimetype: 'audio/mp4',
+        ptt: true
+      }, { quoted: mek });
+    } catch (e) {
+      console.error('⚠️ Audio send failed:', e.message);
+    }
+
   } catch (e) {
-    console.error("Menu Error:", e);
-    await conn.sendMessage(from, { text: `❌ Error generating menu:\n${e.message}` });
+    console.error('❌ Menu error:', e.message);
+    await reply(`❌ Menu Error: ${e.message}`);
   }
 });
