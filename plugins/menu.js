@@ -34,15 +34,20 @@ cmd({
 ╰──────────────⬣\n`;
 
     // Ajoute commands yo pa kategori
-    for (const category in grouped) {
-      text += `\n╭─⟪ *${category.toUpperCase()}* ⟫\n`;
-      for (const cmdItem of grouped[category]) {
-        const name = cmdItem.pattern;
-        const desc = cmdItem.desc ? `╰┈➤ ${cmdItem.desc}` : '';
-        text += `│ 🜲 ${name}\n│ ${desc}\n`;
-      }
-      text += `╰──────────────⬣\n`;
-    }
+    for (let k of keys) {
+  menuText += `\n\n╔═══❖•ೋ 🌐 *${k.toUpperCase()} MENU* ೋ•❖═══╗\n`;
+
+  const cmds = categoryMap[k]
+    .filter(c => c.pattern)
+    .sort((a, b) => a.pattern.localeCompare(b.pattern));
+
+  cmds.forEach((cmd) => {
+    const usage = cmd.pattern.split('|')[0];
+    menuText += `║ ➤ ${usedPrefix}${toSmallCaps(usage)}\n`;
+  });
+
+  menuText += `╚════════════════════╝`;
+}
 
     // Voye mesaj meni an avèk imaj ak contextInfo
     await conn.sendMessage(from, {
