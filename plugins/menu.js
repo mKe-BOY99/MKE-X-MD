@@ -58,6 +58,7 @@ cmd({
 │ 🤖 Bot de: ${ownerName}
 │ 💬 User: ${userName}
 │ ⏺️ Mode: ${mode}
+│ 🛠️ RAM: *${ramUsage}MB / ${totalRam}MB*
 │ 🔰 Prefix: ${prefix}
 ╰──────────────⬣\n`;
 
