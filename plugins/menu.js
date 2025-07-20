@@ -20,13 +20,14 @@ cmd({
   category: 'menu',
   react: '📜',
   filename: __filename
-const { sender, prefix, pushName, botNumber, isGroup, from, isOwner } = mek;
+}, async (conn, mek, m, { from, pushname, isOwner }) => {
 
+  // ✅ Fonction reply
   const reply = (text) => conn.sendMessage(from, { text }, { quoted: mek });
-  
-  // ✅ Check if user is the owner
+
+  // ✅ Owner check
   if (!isOwner) return reply("❌ This command is for the bot *owner only*.");
-  
+
   try {
     const botName = config.BOT_NAME || 'MKE-X MD';
     const ownerName = config.OWNER_NAME || 'Mr MKE BOY';
@@ -59,15 +60,15 @@ const { sender, prefix, pushName, botNumber, isGroup, from, isOwner } = mek;
       text: `✅ Loading complete! Preparing menu...`
     });
 
-    // Grouper commands pa kategori
+    // Group commands by category
     const grouped = {};
     for (const plugin of commands) {
-      const category = plugin.category || 'other';
+      const category = (plugin.category || 'other').toUpperCase();
       if (!grouped[category]) grouped[category] = [];
       grouped[category].push(plugin);
     }
 
-    // Uptime fonksyon
+    // Uptime & RAM usage
     const uptime = () => {
       const sec = process.uptime();
       const h = Math.floor(sec / 3600);
@@ -76,12 +77,11 @@ const { sender, prefix, pushName, botNumber, isGroup, from, isOwner } = mek;
       return `${h}h ${m}m ${s}s`;
     };
 
-    // Stats
     const ramUsage = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1);
     const totalRam = (os.totalmem() / 1024 / 1024).toFixed(1);
 
-    // Kree header meni an
-    let menuHeader = `╭───〔 *${botName} MENU* 〕───⬣
+    // Menu header
+    let text = `╭───〔 *${botName} MENU* 〕───⬣
 │ 🤖 Bot de: *${ownerName}*
 │ 💬 User: *${userName}*
 │ ⏱️ Uptime: *${uptime()}*
@@ -90,11 +90,11 @@ const { sender, prefix, pushName, botNumber, isGroup, from, isOwner } = mek;
 │ 🔰 Prefix: *${prefix}*
 ╰──────────────⬣\n`;
 
+    // Commands per category
     let menuText = '';
 
-    const keys = Object.keys(grouped);
-    for (let k of keys) {
-      menuText += `\n\n╔═══❖•ೋ 🌐 *${k.toUpperCase()} MENU* ೋ•❖═══╗\n`;
+    for (let k of Object.keys(grouped)) {
+      menuText += `\n\n╔═══❖•ೋ 🌐 *${k} MENU* ೋ•❖═══╗\n`;
 
       const cmds = grouped[k]
         .filter(c => c.pattern)
@@ -109,11 +109,11 @@ const { sender, prefix, pushName, botNumber, isGroup, from, isOwner } = mek;
     }
 
     menuText += `\n\n🔋 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 ꯭𝐌𝗞𝚵 𝐁𝐎𝐘`;
-    
-    // Send image with menu
+
+    // Send menu
     await conn.sendMessage(from, {
       image: { url: menuImage },
-      caption: (menuHeader + menuText).trim(),
+      caption: (text + menuText).trim(),
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 777,
@@ -126,7 +126,7 @@ const { sender, prefix, pushName, botNumber, isGroup, from, isOwner } = mek;
       }
     }, { quoted: mek });
 
-    // Send random audio
+    // Random audio
     const audioOptions = [
       'https://files.catbox.moe/3cj1e3.mp4',
       'https://files.catbox.moe/vq3odo.mp4',
