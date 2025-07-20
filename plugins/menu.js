@@ -88,28 +88,30 @@ cmd({
 │ 🔰 Prefix: *${prefix}*
 ╰──────────────⬣\n`;
 
-    // Ajoute commands yo pa kategori
+    let menuText = '';
+
+    const keys = Object.keys(grouped);
     for (let k of keys) {
-  menuText += `\n\n╔═══❖•ೋ 🌐 *${k.toUpperCase()} MENU* ೋ•❖═══╗\n`;
+      menuText += `\n\n╔═══❖•ೋ 🌐 *${k.toUpperCase()} MENU* ೋ•❖═══╗\n`;
 
-  const cmds = categoryMap[k]
-    .filter(c => c.pattern)
-    .sort((a, b) => a.pattern.localeCompare(b.pattern));
+      const cmds = grouped[k]
+        .filter(c => c.pattern)
+        .sort((a, b) => a.pattern.localeCompare(b.pattern));
 
-  cmds.forEach((cmd) => {
-    const usage = cmd.pattern.split('|')[0];
-    menuText += `║ ➤ ${usedPrefix}${toSmallCaps(usage)}\n`;
-  });
+      cmds.forEach((cmd) => {
+        const usage = cmd.pattern.split('|')[0];
+        menuText += `║ ➤ ${prefix}${toSmallCaps(usage)}\n`;
+      });
 
-  menuText += `╚════════════════════╝`;
-}
+      menuText += `╚════════════════════╝`;
+    }
 
     menuText += `\n\n🔋 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 ꯭𝐌𝗞𝚵 𝐁𝐎𝐘`;
     
-    // Voye mesaj meni an avèk imaj ak contextInfo
+    // Send image with menu
     await conn.sendMessage(from, {
       image: { url: menuImage },
-      caption: text.trim(),
+      caption: (menuHeader + menuText).trim(),
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 777,
@@ -122,7 +124,8 @@ cmd({
       }
     }, { quoted: mek });
 
- const audioOptions = [
+    // Send random audio
+    const audioOptions = [
       'https://files.catbox.moe/3cj1e3.mp4',
       'https://files.catbox.moe/vq3odo.mp4',
       'https://files.catbox.moe/fo2kz0.mp4',
@@ -133,7 +136,7 @@ cmd({
 
     const randomAudio = audioOptions[Math.floor(Math.random() * audioOptions.length)];
 
-        try {
+    try {
       await conn.sendMessage(from, {
         audio: { url: randomAudio },
         mimetype: 'audio/mp4',
