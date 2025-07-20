@@ -20,8 +20,9 @@ cmd({
   category: 'menu',
   react: '📜',
   filename: __filename
-}, async (conn, mek, m, { from, pushname, isOwner }) => {
-const reply = (text) => conn.sendMessage(from, { text }, { quoted: mek });
+const { sender, prefix, pushName, botNumber, isGroup, from, isOwner } = mek;
+
+  const reply = (text) => conn.sendMessage(from, { text }, { quoted: mek });
   
   // ✅ Check if user is the owner
   if (!isOwner) return reply("❌ This command is for the bot *owner only*.");
