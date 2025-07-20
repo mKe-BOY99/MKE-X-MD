@@ -1,5 +1,17 @@
+const os = require('os');
 const { cmd, commands } = require('../command');
 const config = require('../config');
+
+// Small caps function
+function toSmallCaps(str) {
+  const smallCaps = {
+    A: 'ᴀ', B: 'ʙ', C: 'ᴄ', D: 'ᴅ', E: 'ᴇ', F: 'ғ', G: 'ɢ', H: 'ʜ',
+    I: 'ɪ', J: 'ᴊ', K: 'ᴋ', L: 'ʟ', M: 'ᴍ', N: 'ɴ', O: 'ᴏ', P: 'ᴘ',
+    Q: 'ǫ', R: 'ʀ', S: 's', T: 'ᴛ', U: 'ᴜ', V: 'ᴠ', W: 'ᴡ', X: 'x',
+    Y: 'ʏ', Z: 'ᴢ'
+  };
+  return str.toUpperCase().split('').map(c => smallCaps[c] || c).join('');
+}
 
 cmd({
   pattern: 'menu',
