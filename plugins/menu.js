@@ -53,17 +53,18 @@ cmd({
       grouped[category].push(plugin);
     }
 
+    // Uptime fonksyon
     const uptime = () => {
       const sec = process.uptime();
-      const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = Math.floor(sec % 60);
+      const h = Math.floor(sec / 3600);
+      const m = Math.floor((sec % 3600) / 60);
+      const s = Math.floor(sec % 60);
       return `${h}h ${m}m ${s}s`;
     };
-    
+
+    // Stats
     const ramUsage = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1);
     const totalRam = (os.totalmem() / 1024 / 1024).toFixed(1);
-    const hostName = os.hostname();
-    const totalCommands = commands.length;
-    let usedPrefix = config.PREFIX || ".";
 
     // Kree header meni an
     let text = `╭───〔 *${botName} MENU* 〕───⬣
