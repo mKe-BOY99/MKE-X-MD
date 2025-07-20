@@ -53,6 +53,12 @@ cmd({
       grouped[category].push(plugin);
     }
 
+    const ramUsage = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1);
+    const totalRam = (os.totalmem() / 1024 / 1024).toFixed(1);
+    const hostName = os.hostname();
+    const totalCommands = commands.length;
+    let usedPrefix = config.PREFIX || ".";
+
     // Kree header meni an
     let text = `╭───〔 *${botName} MENU* 〕───⬣
 │ 🤖 Bot de: ${ownerName}
