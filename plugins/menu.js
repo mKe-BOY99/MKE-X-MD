@@ -80,7 +80,7 @@ const reply = (text) => conn.sendMessage(from, { text }, { quoted: mek });
     const totalRam = (os.totalmem() / 1024 / 1024).toFixed(1);
 
     // Kree header meni an
-    let text = `╭───〔 *${botName} MENU* 〕───⬣
+    let menuHeader = `╭───〔 *${botName} MENU* 〕───⬣
 │ 🤖 Bot de: *${ownerName}*
 │ 💬 User: *${userName}*
 │ ⏱️ Uptime: *${uptime()}*
