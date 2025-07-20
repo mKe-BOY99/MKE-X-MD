@@ -3,9 +3,9 @@ const config = require('../config');
 
 cmd({
   pattern: 'menu',
-  alias: ['help', 'm'],
+  alias: ['allmenu', 'mke'],
   desc: 'Show command menu',
-  category: 'main',
+  category: 'menu',
   react: '📜',
   filename: __filename
 }, async (conn, mek, m, { from, pushname, isOwner }) => {
