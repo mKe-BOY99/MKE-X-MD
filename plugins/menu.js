@@ -53,6 +53,12 @@ cmd({
       grouped[category].push(plugin);
     }
 
+    const uptime = () => {
+      const sec = process.uptime();
+      const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = Math.floor(sec % 60);
+      return `${h}h ${m}m ${s}s`;
+    };
+    
     const ramUsage = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1);
     const totalRam = (os.totalmem() / 1024 / 1024).toFixed(1);
     const hostName = os.hostname();
@@ -61,11 +67,12 @@ cmd({
 
     // Kree header meni an
     let text = `╭───〔 *${botName} MENU* 〕───⬣
-│ 🤖 Bot de: ${ownerName}
-│ 💬 User: ${userName}
-│ ⏺️ Mode: ${mode}
+│ 🤖 Bot de: *${ownerName}*
+│ 💬 User: *${userName}*
+│ ⏱️ Uptime: *${uptime()}*
+│ ⏺️ Mode: *${mode}*
 │ 🛠️ RAM: *${ramUsage}MB / ${totalRam}MB*
-│ 🔰 Prefix: ${prefix}
+│ 🔰 Prefix: *${prefix}*
 ╰──────────────⬣\n`;
 
     // Ajoute commands yo pa kategori
