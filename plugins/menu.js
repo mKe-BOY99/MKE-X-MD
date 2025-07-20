@@ -77,6 +77,8 @@ cmd({
   menuText += `╚════════════════════╝`;
 }
 
+    menuText += `\n\n🔋 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 ꯭𝐌𝗞𝚵 𝐁𝐎𝐘`;
+    
     // Voye mesaj meni an avèk imaj ak contextInfo
     await conn.sendMessage(from, {
       image: { url: menuImage },
