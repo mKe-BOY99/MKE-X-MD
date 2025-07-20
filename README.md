@@ -142,8 +142,8 @@ jobs:
 
 ## 🤝 Credits
 
-- Developer: [MKE-BOY99](https://github.com/dawens8)
-- Contributors: [All Contributors](https://github.com/mKe-BOY99/MKE-X-MD/graphs/contributors)
+- Developer: [MKE-BOY99](https://github.com/mKe-BOY99)
+- Contributors: [All Contributors](https://github.com/dawens8/JESUS-CRASH-V1/graphs/contributors)
 
 > Don't forget to **Star** 🌟 and **Fork** 🍴 this repo if you find it helpful!
 
