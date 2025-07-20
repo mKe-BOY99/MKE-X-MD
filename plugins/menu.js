@@ -21,6 +21,30 @@ cmd({
     const prefix = config.PREFIX || '.';
     const mode = config.MODE || 'default';
 
+    const stages = [
+      '⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0%',
+      '🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜  10%',
+      '🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜  25%',
+      '🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜  50%',
+      '🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  75%',
+      '🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  100%'
+    ];
+    let loadingMsg = await conn.sendMessage(from, { text: `🖤 Loading...\n${stages[0]}` }, { quoted: mek });
+
+    for (let i = 1; i < stages.length; i++) {
+      await new Promise(r => setTimeout(r, 500));
+      await conn.sendMessage(from, {
+        edit: loadingMsg.key,
+        text: `🖤 Loading...\n${stages[i]}`
+      });
+    }
+
+    await new Promise(r => setTimeout(r, 900));
+    await conn.sendMessage(from, {
+      edit: loadingMsg.key,
+      text: `✅ Loading complete! Preparing menu...`
+    });
+
     // Grouper commands pa kategori
     const grouped = {};
     for (const plugin of commands) {
