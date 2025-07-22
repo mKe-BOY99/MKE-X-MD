@@ -61,7 +61,7 @@ MKE-X MD is a powerful, multi-featured WhatsApp MultiDevice bot built using **Ba
 
 ### 2️⃣ Get Session ID
 
-🔗 [Generate Your Pairing Code](https://sessions2.onrender.com)  
+🔗 [Generate Your Pairing Code](https://sessions-mke-tech-boy.onrender.com)  
 (Use VPN if site doesn't load)
 
 ---
